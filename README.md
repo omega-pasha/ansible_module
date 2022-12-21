@@ -49,5 +49,67 @@ Done!
 ```
 {"changed": false, "failed": false, "original_message": "", "message": "File exists", "invocation": {"module_args": {"path": "/tmp/text_file", "content": "Hellow world!!!"}}}
 ```
+## Задание 5-7
+
+`ansible-playbook local_pb.yml`
+```
+PLAY [Test module] *******************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ***************************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [Create text file] **************************************************************************************************************************************************************
+changed: [localhost]
+
+PLAY RECAP ***************************************************************************************************************************************************************************
+localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+```
+
+## Задание 8-9
+
+`ansible-galaxy collection init my_own_namespace.yandex_cloud_elk`
+```
+> tree
+.
+├── README.md
+├── docs
+├── galaxy.yml
+├── local_pb.yml
+├── meta
+│   └── runtime.yml
+├── my_own_module.py
+├── my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
+├── payload.json
+├── plugins
+│   ├── README.md
+│   └── modules
+│       └── my_own_module.py
+└── roles
+```
+
+## Задание 10-12
+```
+> tree
+.
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+```
+
+
+
 
 
