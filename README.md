@@ -37,6 +37,17 @@ Done!
 ```
 
 ## Задание 1-3
-[link my_own_module.py](directory/article-name.md)
+[link  to my_own_module.py](my_own_module.py)
+
+## Задание 4
+
+`python -m ansible.modules.my_own_module payload.json`
+```
+{"changed": true, "failed": false, "original_message": "", "message": "file was written", "invocation": {"module_args": {"path": "/tmp/text_file", "content": "Hellow world!!!"}}}
+```
+`python -m ansible.modules.my_own_module payload.json`
+```
+{"changed": false, "failed": false, "original_message": "", "message": "File exists", "invocation": {"module_args": {"path": "/tmp/text_file", "content": "Hellow world!!!"}}}
+```
 
 
